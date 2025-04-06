@@ -1,0 +1,22 @@
+plugins {
+    id 'groovy'
+}
+
+group = 'org.mrcat'
+version = '1.0'
+
+repositories {
+    maven { url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    compileOnly 'org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT'
+    implementation "net.kyori:adventure-api:4.19.0"
+}
+
+test {
+    useJUnitPlatform()
+}

@@ -1,0 +1,11 @@
+#info for plugin
+name: My custom Plugin!
+description: Template for plugin Spigot!
+main: Main.java
+
+#register commands in file.yml
+commands:
+  #our command!
+  kick:
+    usage: </usage>
+    description: Send a message to the player!
